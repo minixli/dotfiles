@@ -169,13 +169,13 @@ Plug 'MarioRicalde/stab.vim'
 call plug#end()
 
 " Automatically configure indentation for my common programming languages.
-au FileType c           	call StabSoft(4)
-au FileType html        	call StabSoft(2)
-au FileType javascript  	call StabSoft(2)
-au FileType json  		call StabSoft(2)
-au FileType python      	call StabSoft(2)
-au FileType ruby        	call StabSoft(2)
-au FileType typescriptreact	call StabSoft(2)
+au FileType c                   call StabSoft(4)
+au FileType html                call StabSoft(2)
+au FileType javascript          call StabSoft(2)
+au FileType json                call StabSoft(2)
+au FileType python              call StabSoft(2)
+au FileType ruby                call StabSoft(2)
+au FileType typescriptreact     call StabSoft(2)
 
 " Here is a list of color scheme each of which enjoys me: 1989, 256-grayvim,
 " brighton, happy_hacking, PaperColor, railscasts, termschool, ubaryd,
