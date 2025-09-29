@@ -1,5 +1,5 @@
 echo "~/.bash_profile get sourced!"
-export ENV=$HOME/.bashenv
+export BASH_ENV=$HOME/.bashenv
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
