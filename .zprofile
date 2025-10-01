@@ -2,12 +2,12 @@
 PATH=$PATH:.
 
 # PROJ_CFG_PATH=$HOME/Projects/config
-# PROG_CFG_PATH=$HOME/code/config
+# CODE_CFG_PATH=$HOME/code/config
 
 # All the programs used to configure environment for my projects and
 # code are in these directories.
 # PATH=$PATH:$PROJ_CFG_PATH
-# PATH=$PATH:$PROG_CFG_PATH
+# PATH=$PATH:$CODE_CFG_PATH
 
 # Enable me to change into my code base instantly.
 export CDPATH=.:$HOME/Projects:$HOME/code
@@ -41,15 +41,15 @@ done
 # Some helper functions used as shortcut command to configure my
 # coding environment.
 # shellprog () {
-#   . $PROG_CFG_PATH/shell
+#   . $CODE_CFG_PATH/shell
 # }
 
 # groffprog () {
-#   . $PROG_CFG_PATH/groff
+#   . $CODE_CFG_PATH/groff
 # }
 
 # Helper function used as shortcut command to configure my learning
 # environment.
 # learning () {
-#   . $PROG_CFG_PATH/learning
+#   . $CODE_CFG_PATH/learning
 # }
