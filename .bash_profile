@@ -1,4 +1,4 @@
-echo "~/.bash_profile get sourced!"
+# Configure environment for Bash login shells
 export BASH_ENV=$HOME/.bashenv
 
 export NVM_DIR="$HOME/.nvm"
