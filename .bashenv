@@ -1,1 +1,2 @@
-echo "~/.bashenv get sourced!"
+# Configure environment for non-interactive Bash shells
+# Sourced via BASH_ENV for scripts or remote commands (e.g., ssh, Capistrano)
