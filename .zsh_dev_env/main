@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+dev_env_dir=$(dirname "$0")
+source $dev_env_dir/base
+source $dev_env_dir/aliases
