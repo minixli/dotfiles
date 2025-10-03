@@ -1,0 +1,39 @@
+#!/bin/zsh
+
+# Aliases
+#
+# There is a duplicate of aliases in the ~/.zshenv file for availbility
+# within a Vim shell command.
+
+# Extract the name of current directory
+alias dir='echo ${PWD##*/}'
+
+# To prevent overwriting of existing file
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+
+# Use Vim as common editor
+alias v="vim"
+alias vimcfg="v ~/.vimrc"
+alias cv="rm **/*~; rm **/.*~"
+alias ccv="'rm' **/*~; 'rm' **/.*~"
+
+# Use Vim for editing config files
+alias zalicfg="v ~/.zsh_dev_env/aliases"
+alias zdevcfg="v ~/.zsh_dev_env/*[!~]"
+alias zenvcfg="v ~/.zshenv"
+alias zprocfg="v ~/.zprofile"
+alias zshrcfg="v ~/.zshrc"
+
+# Another way to leave shell
+alias quit="exit"
+
+# Shortcut for compiling C++ code
+alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+
+# The command to generate tags files for JS projects is too long.
+alias jsctags="find . -type f -iregex \".*\.js$\" -not -path \"./node_modules/*\" -exec jsctags {} -f \; | sed \"/^$/d\" | LANG=C sort > tags"
+
+# if you would like tags generated for files within node_modules/
+alias jsctagsall="find . -type f -iregex \".*\.js$\" -exec jsctags {} -f \; | sed \"/^$/d\" | LANG=C sort > tags"
