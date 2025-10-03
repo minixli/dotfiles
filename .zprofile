@@ -1,8 +1,8 @@
 # Search command in the current working directory at last.
 PATH=$PATH:.
 
-# PROJ_CFG_PATH=$HOME/Projects/config
-# CODE_CFG_PATH=$HOME/code/config
+PROJ_CFG_PATH=$HOME/Projects/config
+CODE_CFG_PATH=$HOME/code/config
 
 # All the programs used to configure environment for my projects and
 # code are in these directories.
@@ -15,9 +15,6 @@ export CDPATH=.:$HOME/Projects:$HOME/code
 # Causes any background job that attempts to write to the terminal
 # to be stopped.
 stty tostop
-
-PROJ_CFG_PATH=$HOME/Projects/config
-CODE_CFG_PATH=$HOME/code/config
 
 # Tell Zsh where to find functions.
 fpath=(
