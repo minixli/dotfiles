@@ -5,3 +5,5 @@
 	email = MinixLi1986@gmail.com
 [core]
 	editor = vim
+[credential]
+	helper = osxkeychain
