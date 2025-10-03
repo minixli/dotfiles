@@ -187,3 +187,8 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " Disable code syntax checking and repairing functionality.
 " We can use :ALEEnable to enable it.
 let g:ale_enabled = 0
+
+" Store backup, swap, and undo files in ~/.vim/tmp to keep workspace clean
+set backupdir=~/.vim/tmp//    " Directory for backup files (*~)
+set directory=~/.vim/tmp//    " Directory for swap files (*.swp)
+set undodir=~/.vim/tmp//      " Directory for persistent undo files
