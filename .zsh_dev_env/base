@@ -1,0 +1,29 @@
+#!/bin/zsh
+
+# Enable shims and autocompletion
+eval "$(pyenv init -)"
+
+# Configure the shell environment for rbenv
+eval "$(rbenv init -)" > /dev/null
+
+# Perl CPAN Modules are installed into $HOME/perl5
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+
+export NVM_DIR="$HOME/.nvm"
+# This loads nvm,
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# and this loads nvm bash_completion.
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Add Java to PATH
+export JAVA_HOME="`/usr/libexec/java_home -v 14`"
+
+# GitHub Packages authentication token (replace with your own token)
+# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+export PACKAGES_AUTH_TOKEN=YOUR_GITHUB_TOKEN
+
+# Always use vim as my default editor
+export EDITOR=vim
+
+# Turn on vi mode
+set -o vi
