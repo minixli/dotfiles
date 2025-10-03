@@ -16,7 +16,11 @@ alias rm="rm -i"
 # Use Vim as common editor
 alias v="vim"
 alias vimcfg="v ~/.vimrc"
-alias cv="find . -type f -name '*~' -delete && find . -type f -name '.*~' -delete"
+# Remove backup files (*~ and .*~) recursively
+# cv: prompt for confirmation (safe)
+# ccv: delete directly (forceful)
+alias cv="find . -type f \\( -name '*~' -o -name '.*~' \\) -exec rm -i {} \\;"
+alias ccv="find . -type f \\( -name '*~' -o -name '.*~' \\) -delete"
 
 # Use Vim for editing config files
 alias zalicfg="v ~/.zsh_dev_env/aliases"
