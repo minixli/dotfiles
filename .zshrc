@@ -65,7 +65,7 @@ plugins=(
   git
   github
   jira
-  osx
+  macos
   python
   vagrant
 )
