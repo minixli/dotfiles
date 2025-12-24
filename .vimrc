@@ -164,6 +164,9 @@ Plug 'MarioRicalde/stab.vim'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 
+" A low contrast colorscheme, comfortable for extended viewing.
+Plug 'ghifarit53/tokyonight-vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
