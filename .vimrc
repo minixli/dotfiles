@@ -194,9 +194,11 @@ let g:airline_theme='distinguished'
 let g:airline#extensions#tabline#enabled = 1
 " and choose which path formatter airline uses.
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
 " Use Powerline-style separators and icons in vim-airline (Nerd Font required).
 let g:airline_powerline_fonts = 1
+" Disable trailing/whitespace indicators to avoid Powerline glyph
+" line-wrapping issues.
+let g:airline#extensions#whitespace#enabled = 0
 
 " Disable code syntax checking and repairing functionality.
 " We can use :ALEEnable to enable it.
