@@ -133,6 +133,14 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 Plug 'dense-analysis/ale'
 Plug 'flazz/vim-colorschemes'
+
+" A low contrast colorscheme, comfortable for extended viewing.
+Plug 'ghifarit53/tokyonight-vim'
+
+" Greatly improves the editing experience of Markdown.
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+
 " Add two text objects for entire buffer: ae and ie.
 "
 " @see Tip 12
@@ -159,13 +167,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Provides functions to change indentation configuration quickly.
 Plug 'MarioRicalde/stab.vim'
-
-" Greatly improves the editing experience of Markdown.
-Plug 'godlygeek/tabular'
-Plug 'preservim/vim-markdown'
-
-" A low contrast colorscheme, comfortable for extended viewing.
-Plug 'ghifarit53/tokyonight-vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
