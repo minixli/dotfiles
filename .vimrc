@@ -136,6 +136,11 @@ Plug 'flazz/vim-colorschemes'
 
 " A low contrast colorscheme, comfortable for extended viewing.
 Plug 'ghifarit53/tokyonight-vim'
+" A warm, retro-inspired colorscheme focused on readability and low eye strain.
+Plug 'morhetz/gruvbox'
+" A dark, high-contrast colorscheme with vibrant accents, popular for
+" recording and demos.
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Greatly improves the editing experience of Markdown.
 Plug 'godlygeek/tabular'
