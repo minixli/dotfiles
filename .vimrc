@@ -163,10 +163,13 @@ Plug 'tpope/vim-surround'
 "
 " @see Tip 36
 Plug 'tpope/vim-unimpaired'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+
 " Provides functions to change indentation configuration quickly.
 Plug 'MarioRicalde/stab.vim'
+
+" Enhance the status bar to display mode, file information, buffer, etc.
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
