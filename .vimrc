@@ -163,6 +163,8 @@ Plug 'tpope/vim-unimpaired'
 " @see Tip 54
 Plug 'tpope/vim-surround'
 
+" A large collection of classic and community Vim colorschemes, useful for quickly
+" trying and comparing different color styles.
 Plug 'flazz/vim-colorschemes'
 " A low contrast colorscheme, comfortable for extended viewing.
 Plug 'ghifarit53/tokyonight-vim'
@@ -176,7 +178,9 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Declare the list of plugins.
+" ALE (Asynchronous Lint Engine):
+" provides asynchronous syntax checking and linting for multiple languages.
+" Disabled by default in this config and can be enabled manually with :ALEEnable.
 Plug 'dense-analysis/ale'
 
 " List ends here. Plugins become visible to Vim after this call.
