@@ -196,9 +196,9 @@ au FileType ruby                call StabSoft(2)
 au FileType typescriptreact     call StabSoft(2)
 
 " Here is a list of color scheme each of which enjoys me: 1989, 256-grayvim,
-" brighton, happy_hacking, PaperColor, railscasts, termschool, ubaryd,
+" brighton, BlackSea, happy_hacking, PaperColor, railscasts, termschool, ubaryd,
 " wasabi256, xoria256, zellner.
-colorscheme BlackSea
+colorscheme gruvbox
 
 " and the theme for vim-airline (status/tabline beautifier) to distinguished.
 let g:airline_theme='distinguished'
