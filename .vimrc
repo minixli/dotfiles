@@ -130,17 +130,8 @@ set path+=**/
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
-" Declare the list of plugins.
-Plug 'dense-analysis/ale'
-Plug 'flazz/vim-colorschemes'
-
-" A low contrast colorscheme, comfortable for extended viewing.
-Plug 'ghifarit53/tokyonight-vim'
-" A warm, retro-inspired colorscheme focused on readability and low eye strain.
-Plug 'morhetz/gruvbox'
-" A dark, high-contrast colorscheme with vibrant accents, popular for
-" recording and demos.
-Plug 'dracula/vim', { 'as': 'dracula' }
+" Provides functions to change indentation configuration quickly.
+Plug 'MarioRicalde/stab.vim'
 
 " Greatly improves the editing experience of Markdown.
 Plug 'godlygeek/tabular'
@@ -155,26 +146,38 @@ Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-qargs'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+
 " Type gc to comment stuff out.
 "
 " @see Tip 12
 Plug 'tpope/vim-commentary'
-" Provides mappings to easily delete, change and add such surroundings in pairs.
-"
-" @see Tip 54
-Plug 'tpope/vim-surround'
+
 " Pairs of bracket mappings which are short normal mode aliases for commonly
 " used Ex commands. [b is :bprevious, ]b is :bnext, etc.
 "
 " @see Tip 36
 Plug 'tpope/vim-unimpaired'
 
-" Provides functions to change indentation configuration quickly.
-Plug 'MarioRicalde/stab.vim'
+" Provides mappings to easily delete, change and add such surroundings in pairs.
+"
+" @see Tip 54
+Plug 'tpope/vim-surround'
+
+Plug 'flazz/vim-colorschemes'
+" A low contrast colorscheme, comfortable for extended viewing.
+Plug 'ghifarit53/tokyonight-vim'
+" A warm, retro-inspired colorscheme focused on readability and low eye strain.
+Plug 'morhetz/gruvbox'
+" A dark, high-contrast colorscheme with vibrant accents, popular for
+" recording and demos.
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Enhance the status bar to display mode, file information, buffer, etc.
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Declare the list of plugins.
+Plug 'dense-analysis/ale'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
