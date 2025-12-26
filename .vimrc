@@ -160,6 +160,10 @@ Plug 'vim-airline/vim-airline-themes'
 " Provides functions to change indentation configuration quickly.
 Plug 'MarioRicalde/stab.vim'
 
+" Greatly improves the editing experience of Markdown.
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
