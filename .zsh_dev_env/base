@@ -25,5 +25,12 @@ export PACKAGES_AUTH_TOKEN=YOUR_GITHUB_TOKEN
 # Always use vim as my default editor
 export EDITOR=vim
 
+# For ollama server
+#
+# Allow remote access from other devices in the local network
+export OLLAMA_HOST=0.0.0.0
+# Enable CORS to allow connections from browser extensions (e.g., Page Assist)
+export OLLAMA_ORIGINS="*"
+
 # Turn on vi mode
 set -o vi
