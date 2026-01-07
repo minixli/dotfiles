@@ -198,7 +198,7 @@ au FileType typescriptreact     call StabSoft(2)
 " Here is a list of color scheme each of which enjoys me: 1989, 256-grayvim,
 " brighton, BlackSea, happy_hacking, PaperColor, railscasts, termschool, ubaryd,
 " wasabi256, xoria256, zellner.
-colorscheme gruvbox
+colorscheme railscasts
 
 " and the theme for vim-airline (status/tabline beautifier) to distinguished.
 let g:airline_theme='distinguished'
@@ -220,3 +220,8 @@ let g:ale_enabled = 0
 set backupdir=~/.vim/tmp/    " Directory for backup files (*~)
 set directory=~/.vim/tmp/    " Directory for swap files (*.swp)
 set undodir=~/.vim/tmp/      " Directory for persistent undo files
+
+" Enter Presentation Mode:
+" Apply a clean, distraction-free Vim layout for teaching and screen
+" recording.
+command! PresentationMode source ~/.vim/presentation.vim
