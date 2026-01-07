@@ -36,3 +36,22 @@ set showtabline=0
 " Hide all statuslines to achieve a distraction-free, content-first view
 " (Note: window separators may still exist and are handled separately)
 set laststatus=0
+
+" ------------------------------------------------------------
+" CursorLine: Use underline instead of background highlight
+" ------------------------------------------------------------
+
+" Enable highlighting of the current cursor line
+set cursorline
+
+" Define CursorLine style:
+" - Use underline to mark the active line
+" - Do NOT set a background color, so the colorscheme's background remains intact
+" - Works in both terminal (cterm) and GUI (gui) environments
+highlight CursorLine cterm=underline gui=underline ctermbg=NONE guibg=NONE
+
+" Ensure CursorLine underline survives colorscheme changes
+augroup CursorLineUnderline
+  autocmd!
+  autocmd ColorScheme * highlight CursorLine cterm=underline gui=underline guibg=NONE
+augroup END
