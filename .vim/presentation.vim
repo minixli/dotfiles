@@ -56,10 +56,3 @@ augroup CursorLineUnderline
   autocmd!
   autocmd ColorScheme * highlight CursorLine cterm=underline gui=underline guibg=NONE
 augroup END
-
-" ------------------------------------------------------------
-" Vim Markdown related
-" ------------------------------------------------------------
-
-" Tell vim-markdown how to interpret fenced code blocks (```...```) for syntax highlighting.
-let g:vim_markdown_fenced_languages = ['jsx=javascript']

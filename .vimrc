@@ -195,6 +195,10 @@ au FileType python              call StabSoft(2)
 au FileType ruby                call StabSoft(2)
 au FileType typescriptreact     call StabSoft(2)
 
+" Tell vim-markdown how to interpret fenced code blocks (```...```) for
+" syntax highlighting.
+let g:vim_markdown_fenced_languages = ['jsx=javascript']
+
 " Here is a list of color scheme each of which enjoys me: 1989, 256-grayvim,
 " brighton, BlackSea, happy_hacking, PaperColor, railscasts, termschool, ubaryd,
 " wasabi256, xoria256, zellner.
