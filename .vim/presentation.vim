@@ -9,6 +9,13 @@ language messages en_US
 " Disable absolute line numbers for a cleaner visual layout
 set nonu
 
+" Disable line wrapping so each logical line stays on a single visual line
+set wrap!
+
+" Use different cursor shapes for different modes
+let &t_SI = "\e[6 q"   " Insert mode: vertical bar
+let &t_EI = "\e[2 q"   " Normal mode: block
+
 " -------------------------------------------------------------------
 " Colorschemes
 "
