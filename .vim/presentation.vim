@@ -47,12 +47,11 @@ set cursorline
 
 " Define CursorLine style:
 " - Use underline to mark the active line
-" - Do NOT set a background color, so the colorscheme's background remains intact
 " - Works in both terminal (cterm) and GUI (gui) environments
-highlight CursorLine cterm=underline gui=underline ctermbg=NONE guibg=NONE
+highlight CursorLine cterm=underline gui=underline ctermbg=236 guibg=#3c3836
 
 " Ensure CursorLine underline survives colorscheme changes
 augroup CursorLineUnderline
   autocmd!
-  autocmd ColorScheme * highlight CursorLine cterm=underline gui=underline guibg=NONE
+  autocmd ColorScheme * highlight CursorLine cterm=underline gui=underline guibg=#3c3836
 augroup END
