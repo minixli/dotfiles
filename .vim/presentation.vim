@@ -12,6 +12,10 @@ set nonu
 " Disable line wrapping so each logical line stays on a single visual line
 set wrap!
 
+" Keep the cursor in the center of the screen, and a few blank lines will
+" naturally appear at the bottom of the screen.
+set scrolloff=5
+
 " Use different cursor shapes for different modes
 let &t_SI = "\e[6 q"   " Insert mode: vertical bar
 let &t_EI = "\e[2 q"   " Normal mode: block
